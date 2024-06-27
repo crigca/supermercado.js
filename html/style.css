@@ -1,0 +1,38 @@
+*{
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+nav, footer {
+  background: rgb(115,254,95) !important;
+  background: linear-gradient(90deg, rgba(115,254,95,1) 0%, rgba(45,223,238,1) 0%, rgba(153,232,241,1) 50%, rgba(45,223,238,1) 100%) !important;
+  border-radius: 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+#logo{
+  min-width: 200px;
+  max-height: 70px;
+}
+
+.history {
+  margin-top: 30px;
+  border: 2px solid #CBCBCB !important;
+  border-radius: 5px;
+  width: 40%;
+  text-align: center;
+  align-content: center;
+}
+
+#carouselExampleInterval{
+  margin-top: 30px;
+  height: 200px;
+  width: 40%;
+}
+#carouselExampleInterval img{
+  height: 230px;
+}
