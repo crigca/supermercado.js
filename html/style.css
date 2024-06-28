@@ -13,26 +13,82 @@ nav, footer {
   border-radius: 5px;
   border-radius: 5px;
   width: 100%;
+  font-size: large;
 }
+
 #logo{
-  min-width: 200px;
+  min-width: auto;
   max-height: 70px;
 }
 
 .history {
   margin-top: 30px;
+  margin-bottom: 10px;
   border: 2px solid #CBCBCB !important;
   border-radius: 5px;
   width: 40%;
-  text-align: center;
-  align-content: center;
+  align-items: center;
+}
+.history p{
+  max-width: 95%;
 }
 
 #carouselExampleInterval{
-  margin-top: 30px;
   height: 200px;
   width: 40%;
 }
 #carouselExampleInterval img{
   height: 230px;
+}
+.apartado-titulo{
+  padding-left: 2em ;
+}
+footer{
+  margin-top: 20px;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  margin-bottom: 0;
+}
+.social-media{
+  max-width: 30px;
+  max-height: 30px;
+  margin: 10px;
+}
+.align-center{
+  align-items: center !important;
+}
+
+
+@media only screen and (max-width:900px) {
+  .flex-row{
+    flex-direction: column !important;
+  }
+  .history{
+    width: 90%;
+  }
+  #carouselExampleInterval{
+    height: 300px;
+    width: 90%;
+  }
+  #carouselExampleInterval img{
+    height: 300px;
+  }
+  .apartados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .apartado-titulo{
+    padding: 0;
+  }
+  .card{
+    margin-top: 10px;
+    width: 90vw !important;
+  }
 }
