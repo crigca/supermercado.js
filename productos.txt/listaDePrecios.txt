@@ -1,0 +1,100 @@
+1. Manzana - $1.50
+2. Banana - $0.50
+3. Naranja - $1.00
+4. Pera - $1.25
+5. Uvas - $2.00
+6. Fresas - $2.50
+7. Sandía - $3.00
+8. Melón - $3.50
+9. Piña - $2.75
+10. Kiwi - $1.75
+11. Limón - $0.60
+12. Palta - $1.80
+13. Tomate - $1.20
+14. Lechuga - $1.00
+15. Zanahoria - $0.90
+16. Pepino - $1.00
+17. Brócoli - $1.50
+18. Espinaca - $1.25
+19. Cebolla - $0.80
+20. Ajo - $0.30
+21. Papas - $1.00
+22. Calabacín - $1.10
+23. Pimiento - $1.50
+24. Champiñones - $2.00
+25. Maíz - $1.20
+26. Ejotes - $1.50
+27. Berenjena - $1.75
+28. Apio - $1.00
+29. Cilantro - $0.50
+30. Perejil - $0.50
+31. Albahaca - $0.75
+32. Romero - $0.60
+33. Salvia - $0.70
+34. Orégano - $0.50
+35. Pan blanco - $1.00
+36. Pan integral - $1.20
+37. Pan de centeno - $1.50
+38. Baguette - $1.75
+39. Croissant - $2.00
+40. Donut - $1.00
+41. Bagel - $1.20
+42. Muffin - $1.50
+43. Pastel de manzana - $3.00
+44. Tarta de chocolate - $4.00
+45. Tarta de queso - $3.50
+46. Bizcocho - $2.50
+47. Galletas - $1.50
+48. Brownie - $2.00
+49. Helado de vainilla - $3.00
+50. Helado de chocolate - $3.00
+51. Leche entera - $1.50
+52. Leche descremada - $1.50
+53. Yogur natural - $1.00
+54. Yogur de frutas - $1.20
+55. Queso cheddar - $2.50
+56. Queso mozzarella - $2.50
+57. Queso azul - $3.00
+58. Queso parmesano - $3.00
+59. Mantequilla - $1.50
+60. Margarina - $1.20
+61. Huevos - $2.00
+62. Pollo - $5.00
+63. Carne de res - $7.00
+64. Cerdo - $6.00
+65. Pescado - $8.00
+66. Camarones - $10.00
+67. Salmón - $12.00
+68. Atún - $9.00
+69. Arroz - $1.00
+70. Pasta - $1.50
+71. Harina - $0.80
+72. Azúcar - $0.90
+73. Sal - $0.50
+74. Pimienta - $0.70
+75. Aceite de oliva - $5.00
+76. Aceite vegetal - $3.00
+77. Vinagre - $1.00
+78. Salsa de soja - $1.50
+79. Salsa de tomate - $1.20
+80. Mayonesa - $1.50
+81. Mostaza - $1.00
+82. Ketchup - $1.20
+83. Mermelada de fresa - $1.50
+84. Mermelada de durazno - $1.50
+85. Miel - $2.00
+86. Café - $4.00
+87. Té - $2.50
+88. Jugo de naranja - $2.00
+89. Jugo de manzana - $2.00
+90. Refresco de cola - $1.50
+91. Refresco de limón - $1.50
+92. Agua mineral - $1.00
+93. Cerveza - $3.00
+94. Vino tinto - $10.00
+95. Vino blanco - $10.00
+96. Vodka - $15.00
+97. Whisky - $20.00
+98. Ron - $12.00
+99. Gin - $18.00
+100. Tequila - $22.00
