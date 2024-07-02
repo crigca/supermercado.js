@@ -5,6 +5,7 @@ let main = document.getElementById("main");
 let textos = document.getElementsByClassName("texto");
 let card_body = document.getElementsByClassName("card-body");
 const lista_productos=document.getElementById("lista-productos");
+let hoverBlanco = document.getElementsByClassName("hover-blanco");
 
 //modo noche y día
 btn_luna.addEventListener("click", function(e){
@@ -40,16 +41,16 @@ for (let i=0; i<productsName.length;i++){
     let div_card = document.createElement("div");
     div_card.classList.add("card", "mb-2");
     div_card.style.width="18rem";
+
     //creo la imagen y le asigno la ruta
     let image = document.createElement("img");
+    image.src=`imagesProducts/${productsName[i]}.jpg`;
+    image.alt=`Foto de ${productsName[i]}`;
 
-    //image.src=`imagesProducts/${productsName[i]}.jpg`;
-    image.src ='Fideos.jpg';
-    
-    image.alt=`Foto de ${productsName[i]}`
     //creo el div del cuerpo de la carta con su clase
     let div_card_body=document.createElement("div");
     div_card_body.classList.add("card-body");
+
     //creo el titulo de la carta con sus clases y texto
     let card_title=document.createElement("h5");
     card_title.classList.add("card-title", "texto");
@@ -57,20 +58,23 @@ for (let i=0; i<productsName.length;i++){
     span.classList.add("precio");
     span.innerHTML=" $"+productsPrice[i];
     card_title.innerHTML=`${productsName[i]}`;
+
     //creo el p para la descripcion de los productos y sus clases
     let card_text=document.createElement("p");
     card_text.classList.add("card-text", "texto");
     card_text.innerHTML=productsDesc[i];
+
     //creo el input de cantidad
     let input_number= document.createElement("input");
     input_number.setAttribute("type","number");
     input_number.placeholder="Cantidad"
     input_number.classList.add(`input${i}`);  
+    
     //uniones
     lista_productos.appendChild(div_card);
     div_card.appendChild(image);
-   // div_card.appendChild(div_card_body);
-    //div_card_body.appendChild(card_title);
+    div_card.appendChild(div_card_body);
+    div_card_body.appendChild(card_title);
     card_title.appendChild(span);
     div_card_body.appendChild(card_text);
     div_card_body.appendChild(input_number);
