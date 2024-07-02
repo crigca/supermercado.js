@@ -1,8 +1,10 @@
 //elementos dom
 let btn_luna = document.getElementById("modoOscuro");
 let btn_sol = document.getElementById("modoClaro");
-let main = document.getElementById("main");
-let textos = document.getElementsByClassName("texto");
+let main = document.querySelector("body");
+let textos = document.getElementsByClassName("hover-blanco");
+//let main = document.getElementById("main");
+//let textos = document.getElementsByClassName("texto");
 
 btn_luna.addEventListener("click", function(e){
     main.classList.toggle("modoOscuro");

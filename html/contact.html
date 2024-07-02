@@ -35,10 +35,33 @@
           </ul>
         </nav>
       </header>
-      <body>
-        <main id="main">
 
-        </main>
+        <!--Formuario de contacto-->
+        <div class="container mt-5">
+          <h2 class = "hover-blanco">Contacto</h2>
+          <form id ="contact-form">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre y apellido</label>
+              <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Ingresa tu número de teléfono">
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Ingresa tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      
+
+        
 
       <!-- Footer -->
       <footer class="align-middle">
