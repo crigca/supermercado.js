@@ -17,7 +17,7 @@
         <a href="index.html"><img id="logo" class="nav-item " src="images/laEstrellaLogo.jpg" alt="Logo del Supermercado La Estrella"></a>
       
         <!-- Los tres botones del nav -->
-        <ul class="nav nav-item align-center">
+        <ul class="nav nav-item align-center nav-menu">
         <li class="nav-item ">
           <img src="images/luna.png" alt="Modo oscuro" id="modoOscuro" class="hover-blanco">
           <img src="images/sol.png" alt="Modo claro" id="modoClaro" class="hover-blanco">
@@ -33,6 +33,23 @@
             <a class="nav-link hover-blanco" href="contact.html">Contacto</a>
           </li>
         </ul>
+        <ul id="menu-dropdown">
+          <li class="nav-item ">
+            <img src="images/luna.png" alt="Modo oscuro" id="modoOscuro1" class="hover-blanco">
+            <img src="images/sol.png" alt="Modo claro" id="modoClaro1" class="hover-blanco">
+  
+          </li>
+            <li class="nav-item ">
+              <a class="nav-link active hover-blanco" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item align-center align-center">
+              <a class="nav-link hover-blanco hover-blanco" href="products.html">Productos</a>
+            </li>
+            <li class="nav-item align-center">
+              <a class="nav-link hover-blanco hover-blanco" href="contact.html">Contacto</a>
+            </li>
+          </ul>
+        <img src="images/menu.png" id="boton-dropdown" alt="Menú">
       </nav>
     </header>
     <body>
@@ -43,6 +60,21 @@
           </div>
       <!-- Lista de productos -->
           <div id="lista-productos" class="d-flex flex-row flex-wrap productos text-center justify-content-around">
+
+          </div>
+
+          <div id="max-alert" class="alert alert-warning" role="alert">
+            No puedes pedir más que el stock disponible
+          </div>
+          <div id="negative-alert" class="alert alert-warning" role="alert">
+            ¿Quieres pedir un número negativo?
+          </div>
+
+          <div id="products-tittle">
+            <h1 class ="hover-blanco texto">Lista de Productos</h1>
+          </div>
+      <!-- Lista de productos -->
+          <div id="lista-productos" class="align-center d-flex flex-wrap productos text-center justify-content-around">
 
           </div>
 
