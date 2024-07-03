@@ -12,17 +12,17 @@
     <div class="contenedor">
       
       <header>
-        <nav class="nav justify-content-between p-2">
+        <nav class="nav justify-content-between p-2" id="navigatorBar">
           <!-- Logo del supermercado -->
         <a href="index.html"><img id="logo" class="nav-item " src="images/laEstrellaLogo.jpg" alt="Logo del Supermercado La Estrella"></a>
         
         <!-- Los tres botones del nav -->
-        <ul class="nav nav-item align-center">
-          <li class="nav-item ">
-            <img src="images/luna.png" alt="Modo oscuro" id="modoOscuro" class="hover-blanco">
-            <img src="images/sol.png" alt="Modo claro" id="modoClaro" class="hover-blanco">
-  
-          </li>
+          <ul class="nav nav-item align-center nav-menu">
+            <li class="nav-item ">
+              <img src="images/luna.png" alt="Modo oscuro" id="modoOscuro" class="hover-blanco">
+              <img src="images/sol.png" alt="Modo claro" id="modoClaro" class="hover-blanco">
+    
+            </li>
             <li class="nav-item ">
               <a class="nav-link active hover-blanco" aria-current="page" href="index.html">Inicio</a>
             </li>
@@ -33,12 +33,64 @@
               <a class="nav-link hover-blanco hover-blanco" href="contact.html">Contacto</a>
             </li>
           </ul>
+
+          <ul id="menu-dropdown">
+            <li class="nav-item ">
+              <img src="images/luna.png" alt="Modo oscuro" id="modoOscuro1" class="hover-blanco">
+              <img src="images/sol.png" alt="Modo claro" id="modoClaro1" class="hover-blanco">
+    
+            </li>
+              <li class="nav-item ">
+                <a class="nav-link active hover-blanco" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item align-center align-center">
+                <a class="nav-link hover-blanco hover-blanco" href="products.html">Productos</a>
+              </li>
+              <li class="nav-item align-center">
+                <a class="nav-link hover-blanco hover-blanco" href="contact.html">Contacto</a>
+              </li>
+            </ul>
+          <img src="images/menu.png" id="boton-dropdown" alt="Menú">
+
         </nav>
       </header>
-      <body>
-        <main id="main">
 
-        </main>
+      <main id="main">
+        <!--Formuario de contacto-->
+        <div class="container mt-5">
+
+          <div id="alert-primary" class="alert alert-primary" role="alert">
+            Completa todos los campos obligatorios
+          </div>
+          <div id="alert-success" class="alert alert-success" role="alert">
+            Su mensaje se ha enviado correctamente
+          </div>
+
+          <h2 class = "texto">Contacto</h2>
+          <h6 class="texto">Los campos obligatorios tienen un <span class="obligatorio">*</span></h6>
+          <form id ="contact-form">
+            <div class="mb-3">
+              <label for="nombre" class="form-label texto">Nombre y apellido<span class="obligatorio">*</span></label>
+              <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label texto">Email<span class="obligatorio">*</span></label>
+              <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label texto">Teléfono</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Ingresa tu número de teléfono">
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label texto">Mensaje<span class="obligatorio">*</span></label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Ingresa tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </main>
+
+        
 
       <!-- Footer -->
       <footer class="align-middle">

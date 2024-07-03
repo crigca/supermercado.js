@@ -6,24 +6,28 @@
   margin-right: 0;
   margin-left: 0;
 }
-#main{
-  padding-bottom: 20px;
-}
+
 .nav-link{
   border-radius: 10px;
 }
 .hover-blanco:hover{
   background-color: #fefeff87;
 }
+#navigatorBar{
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+}
 
-#modoOscuro,#modoClaro{
+#modoOscuro,#modoClaro,#boton-dropdown, #modoOscuro1,#modoClaro1{
   cursor: pointer;
   border-radius: 10px;
   padding: 7px;
   height: 40px;
   width: auto;
 }
-#modoClaro{
+#modoClaro,#boton-dropdown,#modoClaro1{
   display: none;
 }
 
@@ -47,6 +51,10 @@ nav, footer {
   max-height: 70px;
 }
 
+/* iNICIO DEL MAIN */
+#main{
+  padding-bottom: 20px;
+}
 .history {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -70,6 +78,7 @@ nav, footer {
   padding-left: 2em ;
 }
 
+/* INICIO DEL FOOTER */
 .footer{
   display: flex;
   flex-direction: row;
@@ -88,8 +97,58 @@ footer p {
 .align-center{
   align-items: center !important;
 }
+.obligatorio{
+  color:peru;
+  font-size: larger;
+}
+#products-tittle{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 60px;
+  font-size: 60px;
+  font-style: normal;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
+body{
+  padding-top: 86px;
+}
 
+.precio{
+  color: rgb(175, 143, 53);
+}
+
+.alert{
+  opacity: 0;
+  position: fixed;
+  transition: opacity 0.5s;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  pointer-events: none;
+}
+
+.show{
+  opacity: 1;
+}
+  
+#menu-dropdown{
+  display: none;
+  position: fixed;
+  z-index: 300;
+  top: 6%;
+  right: 0%;
+  list-style: none;
+  text-align: right;
+  background-color: white; /* Estilo adicional según necesites */
+  padding: 10px; /* Estilo adicional según necesites */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Estilo adicional según necesites */
+
+}
+/* MEDIA QUERY DE INDEX */
 @media only screen and (max-width:900px) {
   .flex-row{
     flex-direction: column !important;
@@ -115,5 +174,17 @@ footer p {
   .card{
     margin-top: 10px;
     width: 90vw !important;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .nav-menu {
+    display: none;
+  }
+  #boton-dropdown {
+    display: block;
+  }
+  #boton-dropdown:hover + .menu-dropdown {
+    display: block;
   }
 }
