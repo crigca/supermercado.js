@@ -11,7 +11,7 @@ let main = document.querySelector("body");
 let textos = document.getElementsByClassName("texto");
 let card_body = document.getElementsByClassName("card-body");
 let primary_alert= document.getElementById("alert-primary");
-let successs_alert= document.getElementById("alert-success");
+let success_alert= document.getElementById("alert-success");
 let btn_dropdown = document.getElementById("boton-dropdown");
 let menu_dropdown = document.getElementById("menu-dropdown");
 
