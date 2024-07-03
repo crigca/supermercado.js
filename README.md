@@ -21,17 +21,18 @@ Este proyecto es el final de cuatrimestre y consiste en el desarrollo de una pá
 - Implementar un chatbot basico.
 
 ## 3. Estructura del Proyecto
-├── html/
-│ ├── contact.html
-│ ├── index.html
-│ ├── products.html
-│ ├── style.css
-│ └── images.jpg
-├── js/
-│ ├── contact.js
-│ ├── index.js
-│ └── products.js
-└── README.md
+- 📁 **html/**
+  - 📄 contact.html
+  - 📄 index.html
+  - 📄 products.html
+  - 📄 style.css
+  - 🖼️ images.jpg
+- 📁 **js/**
+  - 📄 contact.js
+  - 📄 index.js
+  - 📄 products.js
+- 📄 **README.md**
+
 
 ##  4. Tecnologías Utilizadas
 - **HTML5**: Para la estructura de las páginas.
