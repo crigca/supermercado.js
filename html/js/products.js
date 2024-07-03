@@ -33,8 +33,8 @@ btn_sol.addEventListener("click",function(e){
 
 //productos
 const productsName = ["Manzana", "Pan", "Huevos", "Uva", "Leche", "Fideos", "Galletitas", "Vino", "Mayonesa", "Pollo"];
-const productsPrice = [200, 1500, 2300, 4000, 1100, 800, 1500, 7000, 1400, 2200];
-const productsDesc = ["Manzana roja traída de las profundidades del amazonas.", "Pan hecho por los mismos panaderos que hacen el pan bimbo.", "Huevos de calidad provenientes del campo.", "Uva importada de la misma italia patria.", "Leche proveniente de la mismisima serenisima", "Fideos fabricados y distribuidos por la marca marolio", "Galletitas hechas por la marca Mediatarde", "Vinos hechos y refinados por la gran italia", "Pollos de buena calidad provenientes del campo"]
+const productsPrice = [1100, 1500, 2300, 4000, 1100, 800, 1500, 7000, 1400, 2200]; 
+const productsDesc = ["Manzana roja traída de las profundidades del Amazonas.", "Pan hecho por los mismos panaderos que hacen el pan Bimbo.", "Huevos de calidad provenientes de granjas naturales.", "Uva importada de la misma Italia patria.", "Leche proveniente de la mismisima Serenisima.", "Fideos fabricados y distribuidos por la marca Marolio.", "Galletitas hechas con amor por la marca Mediatarde.", "Vinos refinados del sur de Francia.","Mayonesa natural baja en calorias", "Pollos de buena calidad criados a campo."]
             
 for (let i=0; i<productsName.length;i++){
     //creo el div contenedor y le agrego las clases y estilos
