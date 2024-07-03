@@ -24,6 +24,7 @@ function toggleModoOscuro() {
     for (let i = 0; i < textos.length; i++) {
         textos[i].classList.toggle("textoBlanco");
     }
+
     menu_dropdown.style.display = "none";
 }
 
@@ -65,7 +66,8 @@ function addData(){
     let phoneValue = phoneInput.value;
     let messageValue = messageInput.value;
 
-    return [nameValue, emailValue, phoneValue, messageValue];
+    return[nameValue, emailValue, phoneValue, messageValue];
+
 }
 
 // Funcion crear txt y descargar.   
@@ -117,3 +119,4 @@ form.addEventListener('submit', function(event) {
 window.addEventListener("resize",function(e){
     menu_dropdown.style.display="none";
 })
+

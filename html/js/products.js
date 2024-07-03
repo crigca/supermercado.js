@@ -22,7 +22,6 @@ btn_dropdown.addEventListener("click", function(e){
             menu_dropdown.style.display="none";
         }
     });
-})
 
 function toggleModoOscuro() {
     main.classList.toggle("modoOscuro");
@@ -32,6 +31,7 @@ function toggleModoOscuro() {
     for (let i=0;i<card_body.length;i++){
         card_body[i].classList.toggle("modoOscuro");
     }
+
     menu_dropdown.style.display = "none";
 }
 
@@ -72,16 +72,17 @@ for (let i=0; i<productsName.length;i++){
     div_card.style.width="18rem";
     div_card.style.maxWidth="22rem"
 
+
     //creo la imagen y le asigno la ruta
     let image = document.createElement("img");
     image.src=`imagesProducts/${productsName[i]}.jpg`;
     image.alt=`Foto de ${productsName[i]}`;
     image.style.height="190px"
 
+
     //creo el div del cuerpo de la carta con su clase
     let div_card_body=document.createElement("div");
     div_card_body.classList.add("card-body");
-    
 
     //creo el titulo de la carta con sus clases y texto
     let card_title=document.createElement("h5");
@@ -90,19 +91,20 @@ for (let i=0; i<productsName.length;i++){
     span.classList.add("precio");
     span.innerHTML=" $"+productsPrice[i];
     card_title.innerHTML=`${productsName[i]}`;
-
+  
     // <h6 class="card-subtitle mb-2 text-body-secondary texto">Entregas a domicilio</h6>
     //creo el subtitulo de la carta (el stock)
     let card_subtitle = document.createElement("h6");
     card_subtitle.innerHTML=`Stock: ${productsStock[i]}`;
     card_subtitle.classList.add("card-subtitle", "mb-2", "texto");
     card_subtitle.style.opacity=0.5;
-
+  
     //creo el p para la descripcion de los productos y sus clases
     let card_text=document.createElement("p");
     card_text.classList.add("card-text", "texto");
     card_text.innerHTML=productsDesc[i];
     card_text.style.height="48px"
+
 
     //creo el input de cantidad
     let input_number= document.createElement("input");
@@ -150,6 +152,7 @@ for (let i=0; i<productsName.length;i++){
 //         userInput = event.target.value;
 //         console.log('Texto actualizado:', userInput)
 //     });
+
 // })
 
 

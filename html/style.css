@@ -107,11 +107,11 @@ footer p {
   font-weight: 60px;
   font-size: 60px;
   font-style: normal;
+  align-items: center;
   text-align: center;
-  padding-top: 40px;
+  margin-top: 40px;
   padding-bottom: 40px;
 }
-
 body{
   padding-top: 86px;
 }
@@ -187,4 +187,3 @@ body{
   #boton-dropdown:hover + .menu-dropdown {
     display: block;
   }
-}
