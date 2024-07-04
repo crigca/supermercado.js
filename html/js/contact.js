@@ -1,32 +1,48 @@
 //elementos dom
-let btn_luna = document.getElementById("modoOscuro");
-let btn_sol = document.getElementById("modoClaro");
-let btn_luna1 = document.getElementById("modoOscuro1");
-let btn_sol1 = document.getElementById("modoClaro1");
 let main = document.querySelector("body");
 let textos = document.getElementsByClassName("texto");
 let primary_alert= document.getElementById("alert-primary");
 let successs_alert= document.getElementById("alert-success");
 let btn_dropdown = document.getElementById("boton-dropdown");
 let menu_dropdown = document.getElementById("menu-dropdown");
+let btn_luna = document.getElementById("modoOscuro");
+let btn_sol = document.getElementById("modoClaro");
+let btn_luna1 = document.getElementById("modoOscuro1");
+let btn_sol1 = document.getElementById("modoClaro1");
 
-btn_dropdown.addEventListener("click", function(e){
-    menu_dropdown.style.display="flex";
-    document.addEventListener("click", function (e) {
-        if(!menu_dropdown.contains(e.target) && !btn_dropdown.contains(e.target)){
-            menu_dropdown.style.display="none";
-        }
-    });
-})
+function applyDarkMode() {
+    main.classList.add("modoOscuro");
+    for (let i = 0; i < textos.length; i++) {
+        textos[i].classList.add("textoBlanco");
+    }
+}
+
+function removeDarkMode() {
+    main.classList.remove("modoOscuro");
+    for (let i = 0; i < textos.length; i++) {
+        textos[i].classList.remove("textoBlanco");
+    }
+}
 
 function toggleModoOscuro() {
-    main.classList.toggle("modoOscuro");
-    for (let i = 0; i < textos.length; i++) {
-        textos[i].classList.toggle("textoBlanco");
+    if (main.classList.contains("modoOscuro")) {
+        removeDarkMode();
+        localStorage.setItem("modoOscuro", "false");
+    } else {
+        applyDarkMode();
+        localStorage.setItem("modoOscuro", "true");
     }
-
     menu_dropdown.style.display = "none";
 }
+
+btn_dropdown.addEventListener("click", function(e) {
+    menu_dropdown.style.display = "flex";
+    document.addEventListener("click", function(e) {
+        if (!menu_dropdown.contains(e.target) && !btn_dropdown.contains(e.target)) {
+            menu_dropdown.style.display = "none";
+        }
+    });
+});
 
 btn_luna.addEventListener("click", function(e) {
     toggleModoOscuro();
@@ -52,6 +68,21 @@ btn_sol1.addEventListener("click", function(e) {
     btn_sol1.style.display = "none";
 });
 
+window.addEventListener("resize", function(e) {
+    menu_dropdown.style.display = "none";
+});
+
+// Revisa si el modo oscuro estaba activo
+window.addEventListener("load", function() {
+    if (localStorage.getItem("modoOscuro") === "true") {
+        applyDarkMode();
+        btn_luna.style.display = "none";
+        btn_sol.style.display = "block";
+    } else {
+        btn_luna.style.display = "block";
+        btn_sol.style.display = "none";
+    }
+});
 //Variables.
 let form = document.getElementById("contact-form");
 let nameInput = document.getElementById("name");
@@ -104,17 +135,18 @@ form.addEventListener('submit', function(event) {
 });
 
 // Chatbot.
-(function(d, t) {
-  var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-  v.onload = function() {
-    window.voiceflow.chat.load({
-      verify: { projectID: '6681436e17a95072bff6ea15' },
-      url: 'https://general-runtime.voiceflow.com',
-      versionID: 'production'
-    });
-  }
-  v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-})(document, 'script');
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '6681436e17a95072bff6ea15' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+
 
 window.addEventListener("resize",function(e){
     menu_dropdown.style.display="none";
