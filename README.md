@@ -7,7 +7,9 @@
 4. [Tecnologías Utilizadas](#tecnologías-utilizadas)
 5. [Descripción de las Páginas](#descripción-de-las-páginas)
 6. [Funcionalidades Implementadas](#funcionalidades-implementadas)
-7. [Colaboradores](#colaboradores)
+7. [Docker](#Docker)
+8. [Colaboradores](#colaboradores)
+
 
 ## 1. Introducción
 
@@ -52,11 +54,25 @@ Este proyecto es el final de cuatrimestre y consiste en el desarrollo de una pá
 - **contac.js**: Gestion de la interaccion de  página de contacto.
 
 ## 6. Funcionalidades Implementadas
-- **Formulario de Contacto**: Captura los datos ingresados por el usuario (nombre, email, teléfono, mensaje) y      permite la descarga de estos datos en un archivo de texto.
+  - **Formulario de Contacto**: Captura los datos ingresados por el usuario (nombre, email, teléfono, mensaje) y      permite la descarga de estos datos en un archivo de texto.
   - **Validación**: Validación básica para asegurarse de que los campos no estén vacíos y que el email tenga un formato válido.
   - **Descarga de Datos**: Los datos del formulario se descargan en un archivo `contact_data.txt` al hacer clic en "Enviar".
 
-## 7. Colaboradores
+## 7. Docker
+
+Este proyecto también está disponible como una imagen Docker, lo que facilita su despliegue y ejecución en cualquier entorno compatible con Docker.
+
+### Requisitos
+
+- [Docker](https://docs.docker.com/get-docker/)
+
+### Instrucciones para Descargar y Ejecutar la Imagen Docker
+
+1. **Descargar la Imagen desde Docker Hub:**
+   ```bash
+   docker pull crigca/supermercado:latest
+   
+## 8. Colaboradores
 - **Sergio**
 - **Bautista**
 - **Cristian**
