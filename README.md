@@ -55,9 +55,16 @@ Este proyecto es el final de cuatrimestre y consiste en el desarrollo de una pá
 - **Formulario de Contacto**: Captura los datos ingresados por el usuario (nombre, email, teléfono, mensaje) y      permite la descarga de estos datos en un archivo de texto.
   - **Validación**: Validación básica para asegurarse de que los campos no estén vacíos y que el email tenga un formato válido.
   - **Descarga de Datos**: Los datos del formulario se descargan en un archivo `contact_data.txt` al hacer clic en "Enviar".
+ 
+## 7. 🌐 Demo
 
-## 7. Colaboradores
+Prueba la página en línea:  
+**[https://supermercado-la-estrella.netlify.app/](https://supermercado-la-estrella.netlify.app/)**
+
+
+## 8. Colaboradores
 - **Sergio**
 - **Bautista**
 - **Cristian**
+
 
